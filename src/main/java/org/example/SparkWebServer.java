@@ -40,7 +40,7 @@ public class SparkWebServer {
 
 
         get("/cliente", (req, res) -> {
-            return "Formulario para llamar a funciones REST asíncronamente";
+            return "formulario para llamar rest asincronicamente";
         });
 
     }
@@ -56,17 +56,21 @@ public class SparkWebServer {
 
 
         private static boolean esPalindromo(String cadena) {
+            cadena = cadena.replaceAll("\\s", "").toLowerCase();
 
-            String invertida = "";
+            int izquierda = 0;
+            int derecha = cadena.length() - 1;
 
-            for (int indice = cadena.length() - 1; indice >= 0; indice--) {
-                invertida += cadena.charAt(indice);
+            while (izquierda < derecha) {
+                if (cadena.charAt(izquierda) != cadena.charAt(derecha)) {
+                    return false;
+                }
+                izquierda++;
+                derecha--;
             }
-            if (cadena == invertida) {
-                return true;
-            } else {
-                return false;
-            }
+
+            return true;
+
         }
     }
 
