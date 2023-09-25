@@ -12,7 +12,7 @@ se modificó el proyecto para calcular:
 - Retorna la maginitud de un vector real de dos dimensiones, es decir recibe dos parámetros reales.
 
 
-_El proyecto fue subido a Docker_
+**_El proyecto fue subido a Docker_**
 
 
 # Como correrlo
