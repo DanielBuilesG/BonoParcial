@@ -12,7 +12,10 @@ se modificó el proyecto para calcular:
 - Retorna la maginitud de un vector real de dos dimensiones, es decir recibe dos parámetros reales.
 
 
-# Tests
+_El proyecto fue subido a Docker_
+
+
+# Como correrlo
 
 Para correr el servidor se debe escribir el siguiente comando en cmd 
 
